@@ -1,12 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trady 360</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Trady: Powerful tool for Logging, Analyze, Control & Prevent Risks, Track & Evaluate Trading skills</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta property="og:title" content="Trady - Powerful tool for trader!">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="Trady - Powerful tool for trader!">
+    <meta name="description" content="Logging, Analyze, Control & Prevent Risks, Track & Evaluate Trading skills.">
+    <meta property="og:description"
+        content="Logging, Analyze, Control & Prevent Risks, Track & Evaluate Trading skills.">
+    <meta property="twitter:description"
+        content="Logging, Analyze, Control & Prevent Risks, Track & Evaluate Trading skills.">
+    <meta property="og:url" content="http://trady360.com">
+    <meta property="og:image" content="https://awabelang.com/public/img/ic_logo_awabe.png">
+    <meta property="twitter:image" content="https://awabelang.com/public/img/ic_logo_awabe.png">
+    <meta property="og:site_name" content="trady360">
+    <!-- view app -->
+    <meta name="google-play-app" content="app-id=com.trady360.trady">
+    <meta name="msApplication-ID" content="App" />
+    <meta name="msapplication-TileImage" content="https://awabelang.com/public/img/ic_logo_dictionary.png" />
+    <link rel="stylesheet" href="public/css/jquery.smartbanner.css" type="text/css" media="screen">
+
+    <!-- Bootstrap core CSS -->
+    <link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"
+        type="text/css">
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="public/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="public/css/creative.min.css" rel="stylesheet">
+    <style>
+        .portfolio-box {
+            padding: 15px;
+        }
+
+        .portfolio-content {
+            display: flex;
+            align-items: center;
+            /* Center content vertically */
+            justify-content: start;
+            /* Align items to the start */
+        }
+
+        .portfolio-box-img {
+            width: 150px;
+            /* Đặt chiều rộng cố định */
+            height: 300px;
+            /* Đặt chiều cao cố định */
+
+            /* Đảm bảo hình ảnh được cắt tỉ lệ phù hợp */
+            margin-right: 15px;
+            float: left;
+            /* Khoảng cách giữa hình ảnh và văn bản */
+        }
+        .portfolio-box-img img {
+            width: 150px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .portfolio-box-caption {
+            height: 300px;
+            justify-content: center;
+        }
+
+        .portfolio-caption {
+            flex: 1;
+            /* Cho phép phần caption chiếm không gian còn lại */
+        }
+
+        .project-category {
+            font-size: 16px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        .project-name {
+            font-size: 13px;
+            color: #fff;
+            line-height: 30px;
+        }
+    </style>
 </head>
-<body>
-    <h1>Welcome to Trady 360!</h1>
-    <p>This is our official website hosted on GitHub Pages.</p>
+
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top" style="line-height: 25px;"><img
+                    src="public/img/trady360.png" style="width: 25px;height: 25px; margin-right: 10px;" />TRADY360</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services">Feature</a>
+                    </li>
+                    <!--
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="https://blog.trady360.com">Blog</a>
+                    </li>
+                    -->
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#store">Download</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead"
+        style="background-image: url(public/img/output-onlinepngtools.png); height: 374px; min-height: 374px;">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading" style="font-size: 34px; color: #003366;">Trady – Discover and Improve Your Trading
+                    Skills</h1>
+                <hr>
+                <h4 style="color: #0c2066;">We will bring the best things to help you improve your trading skills!</h4>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about"
+                    style="margin-top: 50px; background-color: #002550;">Find Out More</a>
+            </div>
+        </div>
+    </header>
+    <!--Trady – Discover and Improve Your Trading Skills-->
+    <section id="about" style="background-color: #002550; padding: 50px 0">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto">
+                    <h2 class="section-heading text-white">Have you ever wondered:</h2>
+                    <hr class="light">
+                    <div style="color: #fff;" class="text-center">
+                        <p>✅ Why did I win or lose a trade?</p>
+                        <p>✅ How do emotions impact my buy/sell decisions?</p>
+                        <p>✅ How can I improve my trading strategy over time?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" style="padding:50px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Trady - Enhance Your Trading</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 30px;">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div>
+                        <img class="img-fluid icservice" src="public/img/logging.jpg" alt="">
+                        <h3>Logging</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div>
+                        <img class="img-fluid icservice" src="public/img/analyze.png" alt="">
+                        <h3>Analyze</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div>
+                        <img class="img-fluid icservice" src="public/img/prevent.png" alt="">
+                        <h3>Control & Prevent Risks</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div>
+                        <img class="img-fluid icservice" src="public/img/evaluate.png" alt="">
+                        <h3>Track & Evaluate Trading skills</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-0" id="portfolio">
+        <div class="container">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-6 col-sm-6">
+                    <div target="_blank" class="portfolio-box" style="background-color: #1976D2;">
+                        <div class="portfolio-box-img">
+                            <img  src="https://awabelang.com/public/img/portfolio/thumbnails/bg7.png"
+                                alt="">
+                        </div>
+
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-center" >
+                                    Logging
+                                </div>
+                                <div class="project-name text-center" style="font-size: 14px; color: #fff;margin-bottom: 10px;">Track Every Trade to Improve Performance</div>
+                                <div class="project-name">
+                                    ✅ Automatically record trades with a clear, structured view. <br />
+                                    ✅ Review past trades with key performance metrics.<br />
+                                    ✅ Analyze performance to make better-informed decisions.<br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div target="_blank" class="portfolio-box" style="background-color: #003366;">
+                        <div class="portfolio-box-img">
+                            <img  src="https://awabelang.com/public/img/portfolio/thumbnails/bg7.png"
+                                alt="">
+                        </div>
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-center">
+                                    Analyze
+                                </div>
+                                <div class="project-name text-center" style="font-size: 16px; color: #fff;margin-bottom: 10px;">Learn from your past to trade smarter.</div>
+                                <div class="project-name" >
+                                    ✅ Review historical trades to avoid costly mistakes.<br />
+                                    ✅ Identify winning patterns and refine trading strategies.<br />
+                                    ✅ Gain insights to increase profitability and consistency.<br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-6 col-sm-6">
+                    <div target="_blank" class="portfolio-box" style="background-color: #4CAF50;">
+                        <div class="portfolio-box-img">
+                            <img  src="https://awabelang.com/public/img/portfolio/thumbnails/bg7.png"
+                                alt="">
+                        </div>
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-center">
+                                    Control & Prevent Risks
+                                </div>
+                                <div class="project-name text-center" style="font-size: 16px; color: #fff;margin-bottom: 10px;">Trade Smart, Minimize Losses</div>
+                                <div class="project-name">
+                                    ✅ Identify and filter out high-risk trades.<br />
+                                    ✅ Set clear risk parameters to protect capital.<br />
+                                    ✅ Maintain consistency and trade with confidence.<br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div target="_blank" class="portfolio-box" style="background-color: #FF9800;">
+                        <div class="portfolio-box-img">
+                            <img  src="https://awabelang.com/public/img/portfolio/thumbnails/bg7.png"
+                                alt="">
+                        </div>
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category">
+                                    Track & Evaluate Trading Skills
+                                </div>
+                                <div class="project-name text-center" style="font-size: 16px; color: #fff;margin-bottom: 10px;">Measure Progress, Improve Performance</div>
+                                <div class="project-name" >
+                                    ✅ Monitor progress and identify areas for improvement. <br />
+                                    ✅ Receive insights to sharpen trading strategies.<br />
+                                    ✅ Stay disciplined and continuously enhance performance.<br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="store" class="call-to-action bg-dark">
+        <div class="container text-center">
+            <h2>Coming soon on the App Store & Google Play on February 10, 2025</h2>
+            <span>📅 Don't miss the launch! Follow us for the latest updates:</span>
+            <div style="margin-top: 20px;">
+                <a href="https://twitter.com/trady360" target="_blank">
+                    <i class="fa-brands fa-x-twitter" style="color: #fff; font-size: 35px;"></i>
+                </a>
+                <a href="https://facebook.com/yourprofile" target="_blank" style="margin-left: 20px;">
+                    <i class="fa-brands fa-facebook" style="color: #fff; font-size: 35px;"></i>
+                </a>
+                <a href="https://reddit.com/user/trady360" target="_blank" style="margin-left: 20px;">
+                    <i class="fa-brands fa-square-reddit" style="color: #fff; font-size: 35px;"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--
+    <div class="call-to-action bg-dark">
+        <div class="container text-center">
+            <h2>Download Now</h2>
+            <a target="_blank" class="btn btn-default btn-xl sr-button margin_10"
+                href="https://play.google.com/store/search?q=awabe">
+                <i class="fa fa-android fa-2x" aria-hidden="true"></i>
+                Google Play!
+            </a>
+            <a target="_blank" class="btn btn-default btn-xl sr-button margin_10"
+                href="https://itunes.apple.com/developer/id1236194489">
+                <i class="fa fa-apple fa-2x" aria-hidden="true"></i>
+                App Store!
+            </a>
+        </div>
+    </div>
+    -->
+    <!--
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading">Help & Support!</h2>
+                    <hr class="primary">
+                    <p>Contact us when you need it!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mr-auto text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p>
+                        <a target="_blank" href="mailto://support@trady360.com"><span>support@trady360.com</span></a>
+                    </p>
+                </div>
+                <div class="col-lg-6 mr-auto text-center">
+                    <div class="fb-like" data-href="https://www.facebook.com/awabestudio/" data-layout="standard"
+                        data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- Bootstrap core JavaScript -->
+    <script src="public/vendor/jquery/jquery.min.js"></script>
+    <script src="public/vendor/popper/popper.min.js"></script>
+    <script src="public/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="public/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="public/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="public/js/detectmobilebrowser.js"></script>
+    <script src="public/js/jquery.smartbanner.js"></script>
+    <!-- Custom scripts for this template -->
+
+    <script>
+        $(document).ready(function () {
+            if (jQuery.browser.mobile) {
+                var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+                if (isAndroid) {
+                    $.smartbanner({
+                        daysHidden: 0,
+                        daysReminder: 0,
+                        title: 'English Dictionary'
+                    });
+                }
+            } else {
+                console.log('You are not using a mobile device!');
+            }
+        });
+    </script>
 </body>
+
 </html>
