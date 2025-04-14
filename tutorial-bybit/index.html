@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How to Get Bybit API Key and Secret</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #f25822;
+    }
+    ol {
+      padding-left: 20px;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+    .note {
+      background: #fff3cd;
+      border-left: 6px solid #ffeeba;
+      padding: 10px;
+      margin: 20px 0;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>How to Get Your Bybit API Key and Secret</h1>
+
+  <ol>
+    <li>Log in to your Bybit account at <a href="https://www.bybit.com/" target="_blank">https://www.bybit.com/</a>.</li>
+    <li>Hover over your profile icon (top right corner) and click <strong>"API"</strong> or go directly to <a href="https://www.bybit.com/app/user/api-management" target="_blank">API Management</a>.</li>
+    <li>Click <strong>"Create New Key"</strong>.</li>
+    <li>Select <strong>"API Key Type"</strong> as <code>System-generated</code> (for most integrations).</li>
+    <li>Set an API name, e.g., <code>Trady App</code>.</li>
+    <li>Under <strong>API Permissions</strong>, only check:
+      <ul>
+        <li><code>Read-Only</code> ✅</li>
+      </ul>
+      <strong>Do not check Trade or Withdrawal permissions.</strong>
+    </li>
+    <li>Optionally, bind the IP address (recommended for security). If unsure, leave it empty.</li>
+    <li>Click <strong>"Submit"</strong> and complete 2FA verification.</li>
+    <li>Your <strong>API Key</strong> and <strong>Secret Key</strong> will be displayed. Save them in a secure place.</li>
+  </ol>
+
+  <div class="note">
+    <strong>Important:</strong> Never share your Secret Key. For security, only enable <code>Read-Only</code> access when using third-party apps like Trady.
+  </div>
+
+</body>
+</html>
