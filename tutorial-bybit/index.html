@@ -1,64 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How to Get Bybit API Key and Secret</title>
+  <!-- Bootstrap 5.3 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
       margin: 40px auto;
       padding: 0 20px;
       line-height: 1.6;
     }
+
     h1 {
-      color: #f25822;
+      color: #272622;
     }
+
     ol {
       padding-left: 20px;
     }
+
     code {
       background-color: #f4f4f4;
       padding: 2px 6px;
       border-radius: 4px;
       font-family: Consolas, monospace;
     }
+
     .note {
       background: #fff3cd;
       border-left: 6px solid #ffeeba;
       padding: 10px;
       margin: 20px 0;
     }
+
     a {
       color: #007bff;
       text-decoration: none;
     }
+
+    /* Các bước */
+
+    .step-row {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: #bac7d3;
+      /* Màu nền để làm nổi bật */
+      height: 70px;
+    }
+
+    .step-number {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #dba22f;
+      color: #fff;
+      margin-right: 10px;
+      font-weight: bold;
+      font-size: 18px;
+
+    }
+
+    .step-description {
+      font-size: 16px;
+      flex-grow: 1;
+      /* Đảm bảo phần mô tả có không gian rộng */
+    }
+
+    .step-description {
+      font-size: 16px;
+      flex-grow: 1;
+    }
+
+    .step-description strong {
+      font-size: 16px;
+      color: #000;
+      /* Màu sắc cho tiêu đề */
+    }
+
+    .step-description p {
+      font-size: 12px;
+      color: #555;
+      /* Màu sắc cho mô tả */
+      margin-top: 2px;
+      margin-bottom: 0;
+    }
+
+    .step-image {
+      width: 100%;
+
+    }
+
+    /* Bố trí mobile và desktop */
+    .row {
+      margin-bottom: 30px;
+    }
   </style>
 </head>
-<body>
 
-  <h1>How to Get Your Bybit API Key and Secret</h1>
+<body style="background: #ecf4f5;padding: 10px;">
 
-  <ol>
-    <li>Log in to your Bybit account at <a href="https://www.bybit.com/" target="_blank">https://www.bybit.com/</a>.</li>
-    <li>Hover over your profile icon (top right corner) and click <strong>"API"</strong> or go directly to <a href="https://www.bybit.com/app/user/api-management" target="_blank">API Management</a>.</li>
-    <li>Click <strong>"Create New Key"</strong>.</li>
-    <li>Select <strong>"API Key Type"</strong> as <code>System-generated</code> (for most integrations).</li>
-    <li>Set an API name, e.g., <code>Trady App</code>.</li>
-    <li>Under <strong>API Permissions</strong>, only check:
-      <ul>
-        <li><code>Read-Only</code> ✅</li>
-      </ul>
-      <strong>Do not check Trade or Withdrawal permissions.</strong>
-    </li>
-    <li>Optionally, bind the IP address (recommended for security). If unsure, leave it empty.</li>
-    <li>Click <strong>"Submit"</strong> and complete 2FA verification.</li>
-    <li>Your <strong>API Key</strong> and <strong>Secret Key</strong> will be displayed. Save them in a secure place.</li>
-  </ol>
+  <h1 style="text-align: center;font-weight: bold;">How to Get Your Bybit API Key and Secret</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col col-12 col-md-6 step-container">
+        <!-- Step 1 -->
+        <div class="step-row">
+          <div class="step-number">1</div>
+          <div class="step-description"><strong>Log in to bybit</strong>
+            <p>Access the bybit app and sign in using your credentials.</p>
+          </div>
+        </div>
+        <div>
+          <img src="./step_1.jpg" class="step-image" alt="Step 1">
+        </div>
+      </div>
 
-  <div class="note">
-    <strong>Important:</strong> Never share your Secret Key. For security, only enable <code>Read-Only</code> access when using third-party apps like Trady.
+      <div class="col-12 col-md-6 step-container">
+        <!-- Step 3 -->
+        <div class="step-row">
+          <div class="step-number">2</div>
+          <div class="step-description"><strong>Search for "API Management"</strong>
+            <p>Use the search bar and type "API" to quickly find the API Management section.</p>
+          </div>
+        </div>
+        <div>
+          <img src="./step_2.jpg" class="step-image" alt="Step 3">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 step-container">
+        <!-- Step 3 -->
+        <div class="step-row">
+          <div class="step-number">3</div>
+          <div class="step-description"><strong>API Management</strong>
+            <p>Touch to "Create An API Key" Button</p>
+          </div>
+        </div>
+        <div>
+          <img src="./step_3.jpg" class="step-image" alt="Step 3">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 step-container">
+        <!-- Step 4 -->
+        <div class="step-row">
+          <div class="step-number">4</div>
+          <div class="step-description"><strong>Enter a label for your new API key</strong>
+            <p>Enter a label for your new API key, e.g. "Trady", then tap Create.</p>
+          </div>
+        </div>
+        <div>
+          <img src="./step_4.jpg" class="step-image" alt="Step 4">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 step-container">
+        <!-- Step 5 -->
+        <div class="step-row">
+          <div class="step-number">5</div>
+          <div class="step-description"><strong>Confirm API creation</strong>
+            <p>Check "Unified Trading" & "Assets".</p>
+          </div>
+        </div>
+        <div>
+          <img src="./step_5.jpg" class="step-image" alt="Step 5">
+          <img src="./step_5_2.jpg" class="step-image" alt="Step 5">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 step-container">
+        <!-- Step 6 -->
+        <div class="step-row">
+          <div class="step-number">6</div>
+          <div class="step-description"><strong>Enter your authentication code</strong>
+            <p>Use your 2FA (Google Authenticator or SMS) to confirm and proceed.</p>
+          </div>
+        </div>
+        <div>
+          <img src="./step_6.jpg" class="step-image" alt="Step 6">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 step-container">
+        <!-- Step 7 -->
+        <div class="step-row">
+          <div class="step-number">7</div>
+          <div class="step-description"><strong>Copy your API Secret</strong>
+            <p>Copy the secret key immediately. It will not be shown again.</p>
+          </div>
+        </div>
+        <div>
+          <img src="./step_7.jpg" class="step-image" alt="Step 7">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 step-container">
+        <!-- Step 8 -->
+        <div class="step-row">
+          <div class="step-number">8</div>
+          <div class="step-description"><strong>Paste API Key and Secret Key to Trady</strong></div>
+        </div>
+        <div>
+          <img src="./step_8.png" class="step-image" alt="Step 8">
+        </div>
+      </div>
+    </div>
+    <div class="note">
+      <strong>Important:</strong> Do not share your API keys. Only use them with trusted apps like Trady. For your
+      safety,
+      keep trading and withdrawal permissions disabled.
+    </div>
   </div>
 
+
+  <!-- Bootstrap 5.3 JS (Optional for interactivity) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pzjw8f+ua7Kw1TIq0ryWzNjWi8gpVK5yQvZw5QY5vB5QID/F+Phl57EwUOclfoj7"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>

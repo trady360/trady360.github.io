@@ -2,62 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>How to Share Google Sheet as a Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Sheet Setup for Trady</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
       line-height: 1.6;
+      padding: 20px;
+      background-color: #f9f9f9;
     }
-    h1 {
-      color: #4285F4;
+    .step {
+      background-color: #fff;
+      border-left: 6px solid #4CAF50;
+      margin: 20px 0;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    ol {
-      padding-left: 20px;
+    .step h2 {
+      margin-top: 0;
     }
     code {
-      background-color: #f4f4f4;
+      background: #eee;
       padding: 2px 6px;
       border-radius: 4px;
-      font-family: Consolas, monospace;
     }
     .note {
-      background: #fff3cd;
-      border-left: 6px solid #ffeeba;
+      background-color: #ffffcc;
       padding: 10px;
-      margin: 20px 0;
+      border-left: 4px solid #ffeb3b;
+      margin-top: 30px;
     }
     a {
-      color: #007bff;
-      text-decoration: none;
+      color: #2196F3;
     }
   </style>
 </head>
 <body>
+  <h1>How to Create a Google Sheet for Trady</h1>
 
-  <h1>How to Share a Google Sheet as a Template</h1>
-
-  <ol>
-    <li>Open your Google Sheets document that you want to share as a template.</li>
-    <li>Click the <strong>"Share"</strong> button at the top right of the screen.</li>
-    <li>In the sharing settings, make sure the document is set to <strong>"Anyone with the link"</strong> can <strong>view</strong>.</li>
-    <li>Now, copy the link of your Google Sheet (it should look like: <code>https://docs.google.com/spreadsheets/d/your_file_id/edit</code>).</li>
-    <li>To make the document accessible as a template, simply modify the copied link by replacing <code>/edit</code> with <code>/template/preview</code>.
-      For example, the link:
-      <br>
-      <code>https://docs.google.com/spreadsheets/d/10inEqn6GYgh2r7_FS0wKkikKkZyrfD3QKyna0vbBBDI/edit</code>
-      becomes:
-      <br>
-      <code>https://docs.google.com/spreadsheets/d/10inEqn6GYgh2r7_FS0wKkikKkZyrfD3QKyna0vbBBDI/template/preview</code>
-    </li>
-    <li>Now, you can share this new link with others. When they click on it, they will be prompted to make a copy of the document, which they can then edit and customize.</li>
-  </ol>
-
-  <div class="note">
-    <strong>Important:</strong> Sharing as a template allows others to create their own copy without modifying your original document. Make sure the permissions are set to "View" to avoid accidental edits.
+  <div class="step">
+    <h2>Step 1: Create a new Google Sheet</h2>
+    <p>Go to <a href="https://sheets.new" target="_blank">sheets.new</a> to instantly create a new spreadsheet.</p>
   </div>
 
+  <div class="step">
+    <h2>Step 2: Rename the sheet</h2>
+    <p>Click the title at the top-left and rename it to something recognizable, like <strong>Trady Sheet</strong>.</p>
+  </div>
+
+  <div class="step">
+    <h2>Step 3: Add a sheet named <code>Trade</code></h2>
+    <p>Click the <strong>+</strong> button at the bottom to add a new sheet and rename it to <code>Trade</code>.</p>
+  </div>
+
+  <div class="step">
+    <h2>Step 4: Add columns to the <code>Trade</code> sheet</h2>
+    <p>Use these headers in row 1:</p>
+    <p><code>ID | SYMBOL | OPEN_TIME | OPEN_PRICE | QTY | SIDE | OPEN_REASON | STOPLOSS | TAKEPROFIT | CLOSE_TIME | CLOSE_PRICE | CLOSE_REASON</code></p>
+  </div>
+
+  <div class="step">
+    <h2>Step 5: Add another sheet named <code>Capital</code></h2>
+    <p>Click the <strong>+</strong> again and rename this one to <code>Capital</code>.</p>
+  </div>
+
+  <div class="step">
+    <h2>Step 6: Add columns to the <code>Capital</code> sheet</h2>
+    <p>Use these headers in row 1:</p>
+    <p><code>DATE | METHOD | AMOUNT</code></p>
+  </div>
+
+  <div class="note">
+    <strong>Tip:</strong> You can reference this <a href="https://docs.google.com/spreadsheets/d/10inEqn6GYgh2r7_FS0wKkikKkZyrfD3QKyna0vbBBDI/edit" target="_blank">sample template</a> for layout and formatting.
+  </div>
 </body>
 </html>
