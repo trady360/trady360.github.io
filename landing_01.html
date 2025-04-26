@@ -53,60 +53,83 @@
     <script>
         function cta_click() {
             logCtaClick()
+            fbq('track', 'PageView');
         }
     </script>
 
 </head>
 
 <body>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '660559703255950');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=660559703255950&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
     <section class="container bg-light py-2">
         <div class="container">
             <h1 class="section-title">Unlock Your Trading Skill with Trady</h1>
             <h4 class="section-title">Optimize Your Decisions with Data-Driven Insights</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="d-flex align-items-start">
-                        <div class="me-3 feature-icon">📊</div>
-                        <div>
-                            <h5>Auto Sync History</h5>
-                            <p>Seamlessly auto-sync your trading data from top platforms such as Binance, Bybit, and others.</p>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="me-3 feature-icon">📊</div>
+                            <div>
+                                <h5>Auto Sync History</h5>
+                                <p>Seamlessly auto-sync your trading data from top platforms such as Binance, Bybit, and
+                                    others.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="me-3 feature-icon">📈</div>
+                            <div>
+                                <h5>Advanced Analytics</h5>
+                                <p>Multi-dimensional analysis of your trading — win rate, emotional patterns,
+                                    timeframes, and beyond.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="me-3 feature-icon">🧠</div>
+                            <div>
+                                <h5>Risk & Emotion Management</h5>
+                                <p>Stay emotionally neutral and reduce impulsive decisions with built-in checklists and
+                                    tools.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="me-3 feature-icon">📅</div>
+                            <div>
+                                <h5>Skill Growth</h5>
+                                <p>Track your evolution over time – from beginner to pro – and adjust your approach as
+                                    needed.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="d-flex align-items-start">
-                        <div class="me-3 feature-icon">📈</div>
-                        <div>
-                            <h5>Advanced Analytics</h5>
-                            <p>Multi-dimensional analysis of your trading — win rate, emotional patterns, timeframes, and beyond.</p>
-                        </div>
-                    </div>
+                <div class="text-center" style="margin-bottom: 20px;margin-top: -20px;">
+                    <a onclick="cta_click()" href="https://trady.onelink.me/aVX7/r0da8lb8"
+                        style="background-color: #000;color: #fff;" class="btn btn-black mt-4 cta-btn"><i
+                            class="bi bi-apple"></i> Install <Strong style="color: orange;">Trady</Strong> Now</a>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="d-flex align-items-start">
-                        <div class="me-3 feature-icon">🧠</div>
-                        <div>
-                            <h5>Risk & Emotion Management</h5>
-                            <p>Stay emotionally neutral and reduce impulsive decisions with built-in checklists and tools.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="d-flex align-items-start">
-                        <div class="me-3 feature-icon">📅</div>
-                        <div>
-                            <h5>Skill Growth</h5>
-                            <p>Track your evolution over time – from beginner to pro – and adjust your approach as
-                                needed.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center" style="margin-bottom: 20px;margin-top: -20px;">
-                <a onclick="cta_click()" href="https://trady.onelink.me/aVX7/r0da8lb8"
-                    style="background-color: #000;color: #fff;" class="btn btn-black mt-4 cta-btn"><i
-                        class="bi bi-apple"></i> Install <Strong style="color: orange;">Trady</Strong> Now</a>
-            </div>
         </div>
     </section>
     <section id="ratings" class="py-5 text-center bg-white">
@@ -264,8 +287,8 @@
                 event_label: 'cta_trial'
             });
         }
-        window.logEvent=logEvent
-        window.logCtaClick=logCtaClick
+        window.logEvent = logEvent
+        window.logCtaClick = logCtaClick
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
