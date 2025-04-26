@@ -51,104 +51,48 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <!-- Meta Pixel Code -->
     <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script');
+        fbq('init', 'PIXEL_ID');
+        fbq('track', 'PageView');
+
         function cta_click() {
+            fbq('track', 'Lead');
             logCtaClick()
         }
     </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Meta Pixel Code -->
 
 </head>
 
 <body>
-    <section class="container bg-light py-3">
-        <div class="container">
-            <h2 class="section-title">Optimize Your Decisions with Data-Driven Insights</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="d-flex align-items-start">
-                        <div class="me-3 feature-icon">📊</div>
-                        <div>
-                            <h5>Trade Logging</h5>
-                            <p>Seamlessly auto-sync your trading data from top platforms such as Binance, Bybit, and others.</p>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <header class="hero" style=" padding: 20px; ">
+                <div>
+                    <h1 class="display-5"><strong style="color: orange;">Trady</strong> - Let Your Trading History Guide
+                        You to Better Decisions</h1>
+                    <p class="lead mt-3">Log your trades, analyze your data, manage risk and emotions, track strategies,
+                        and grow your trading skills – all in one app.</p>
+                    <a onclick="cta_click()" href="https://trady.onelink.me/aVX7/r0da8lb8"
+                        style="background-color: #fff;" class="btn btn-black mt-4 cta-btn"><i class="bi bi-apple"></i>
+                        Download Free</a>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="d-flex align-items-start">
-                        <div class="me-3 feature-icon">📈</div>
-                        <div>
-                            <h5>Advanced Analytics</h5>
-                            <p>Multi-dimensional analysis of your trading — win rate, emotional patterns, timeframes, and beyond.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="d-flex align-items-start">
-                        <div class="me-3 feature-icon">🧠</div>
-                        <div>
-                            <h5>Risk & Emotion Management</h5>
-                            <p>Stay emotionally neutral and reduce impulsive decisions with built-in checklists and tools.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="d-flex align-items-start">
-                        <div class="me-3 feature-icon">📅</div>
-                        <div>
-                            <h5>Skill Growth</h5>
-                            <p>Track your evolution over time – from beginner to pro – and adjust your approach as
-                                needed.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="text-align: center; font-size: 20px;font-weight: bold;">Start Trading Smarter with <Strong style="color: orange;">Trady</Strong> Now</div>
-            <div class="text-center" style="margin-bottom: 20px;">
-                <a onclick="cta_click()" href="https://trady.onelink.me/aVX7/r0da8lb8"
-                    style="background-color: #000;color: #fff;" class="btn btn-black mt-4 cta-btn"><i
-                        class="bi bi-apple"></i> Download <Strong style="color: orange;">Trady</Strong> Now</a>
-            </div>
+            </header>
         </div>
-    </section>
-    <section id="ratings" class="py-5 text-center bg-white">
-        <div class="container">
-            <h2 class="mb-4">What Our Users Say</h2>
-
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="p-4 border rounded shadow-sm h-100">
-                        <div class="mb-2 text-warning fs-5">
-                            ★★★★★
-                        </div>
-                        <p>"A must-have for every serious crypto trader. Helps me track performance and improve
-                            decisions!"</p>
-                        <h6 class="mt-3 mb-0">– Alex T.</h6>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="p-4 border rounded shadow-sm h-100">
-                        <div class="mb-2 text-warning fs-5">
-                            ★★★★★
-                        </div>
-                        <p>"I finally understand my mistakes and where I lose money. Super useful and simple to use."
-                        </p>
-                        <h6 class="mt-3 mb-0">– Linh N.</h6>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="p-4 border rounded shadow-sm h-100">
-                        <div class="mb-2 text-warning fs-5">
-                            ★★★★★
-                        </div>
-                        <p>"The app saves me hours every week. Great UI, clear analytics, and useful insights!"</p>
-                        <h6 class="mt-3 mb-0">– Diego M.</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    </div>
     <section class="container py-5" style="background-color: rgb(228, 193, 193);">
         <h2 class="section-title">Are You Facing These Trading Problems?</h2>
         <div class="row" style="font-size: 16px;">
@@ -166,22 +110,61 @@
             </div>
         </div>
     </section>
-    <div class="container">
-        <div class="row">
-            <header class="hero" style=" padding: 20px; ">
-                <div>
-                    <h1 class="display-5"><strong style="color: orange;">Trady</strong> - Let Your Trading History Guide
-                        You to Better Decisions</h1>
-                    <p class="lead mt-3">Log your trades, analyze your data, manage risk and emotions, track strategies,
-                        and grow your trading skills – all in one app.</p>
-                    <a onclick="cta_click()" href="https://trady.onelink.me/aVX7/r0da8lb8"
-                        style="background-color: #fff;" class="btn btn-black mt-4 cta-btn"><i class="bi bi-apple"></i>
-                        Download Free</a>
-                </div>
-            </header>
-        </div>
-    </div>
 
+    <section class="container bg-light py-3">
+        <div class="container">
+            <h2 class="section-title">How <strong style="color: rgb(223, 151, 19);">Trady</strong> Helps</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="d-flex align-items-start">
+                        <div class="me-3 feature-icon">📊</div>
+                        <div>
+                            <h5>Trade Logging</h5>
+                            <p>Effortlessly log your trades, including entry/exit, profit/loss, and emotional state.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="d-flex align-items-start">
+                        <div class="me-3 feature-icon">📈</div>
+                        <div>
+                            <h5>Advanced Analytics</h5>
+                            <p>Analyze your trading performance with real data – win rate, drawdown, and more.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="d-flex align-items-start">
+                        <div class="me-3 feature-icon">🧠</div>
+                        <div>
+                            <h5>Risk & Emotion Management</h5>
+                            <p>Stay emotionally neutral and reduce impulsive decisions with built-in checklists and
+                                tools.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="d-flex align-items-start">
+                        <div class="me-3 feature-icon">🔍</div>
+                        <div>
+                            <h5>Strategy Tracker</h5>
+                            <p>Review and compare your past strategies to optimize for future trades.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="d-flex align-items-start">
+                        <div class="me-3 feature-icon">📅</div>
+                        <div>
+                            <h5>Skill Growth</h5>
+                            <p>Track your evolution over time – from beginner to pro – and adjust your approach as
+                                needed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="screenshots" class="py-3">
         <div class="container">
             <h2 class="text-center mb-4">App Screenshots</h2>
@@ -230,6 +213,46 @@
                     class="bi bi-apple"></i> Download Now</a>
         </div>
     </section>
+    <section id="ratings" class="py-5 text-center bg-white">
+        <div class="container">
+            <h2 class="mb-4">What Our Users Say</h2>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm h-100">
+                        <div class="mb-2 text-warning fs-5">
+                            ★★★★★
+                        </div>
+                        <p>"A must-have for every serious crypto trader. Helps me track performance and improve
+                            decisions!"</p>
+                        <h6 class="mt-3 mb-0">– Alex T.</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm h-100">
+                        <div class="mb-2 text-warning fs-5">
+                            ★★★★★
+                        </div>
+                        <p>"I finally understand my mistakes and where I lose money. Super useful and simple to use."
+                        </p>
+                        <h6 class="mt-3 mb-0">– Linh N.</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm h-100">
+                        <div class="mb-2 text-warning fs-5">
+                            ★★★★★
+                        </div>
+                        <p>"The app saves me hours every week. Great UI, clear analytics, and useful insights!"</p>
+                        <h6 class="mt-3 mb-0">– Diego M.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="container">
         <div>
             <p class="mb-0">&copy; 2025 Trady. All rights reserved.</p>
